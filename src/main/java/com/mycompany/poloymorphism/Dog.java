@@ -8,14 +8,28 @@ package com.mycompany.poloymorphism;
  *
  * @author Lenovo
  */
-public class Dog extends Small implements Animal{
-    @Override
-    public void Walk(){
-        
+public class Dog {// بنضرب امثله علي overloading في الافعالل والصفات 
+    
+   private String name;
+   private int age;
+
+    public Dog(String name) {
+        this.name = name;
     }
-    @Override 
-    public void run(){
+
+    public Dog(String name ,int age) {
+        this.age = age;
+        this.name=name;
     }
+   
+    
+    
+   public void  add(int num1 ,int num2){
+       
+   }// علشان اشيل الايرور لازم  اما اغير نوع او اسم الميثود او اغير الداتا تايب بتاعت variblues
+   public void add(int num3 , int num4, int num5 ){
+   }
+    
     
 
 }
